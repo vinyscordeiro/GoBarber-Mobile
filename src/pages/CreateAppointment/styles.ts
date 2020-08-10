@@ -42,6 +42,8 @@ export const HeaderTitle = styled.Text`
   margin-left: 16px;
 `;
 
+export const ProfileButton = styled.TouchableOpacity``;
+
 export const UserAvatar = styled.Image`
   width: 56px;
   height: 56px;
@@ -132,6 +134,7 @@ export const Hour = styled(RectButton)<HourProps>`
 
   opacity: ${props => (props.available ? 1 : 0.3)};
 `;
+
 export const HourText = styled.Text<HourTextProps>`
   color: ${props => (props.selected ? '#232129' : '#f4ede8')};
   font-family: 'RobotoSlab-Regular';

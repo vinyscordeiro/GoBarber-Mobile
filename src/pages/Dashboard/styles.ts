@@ -25,21 +25,19 @@ export const HeaderTitle = styled.Text`
   line-height: 28px;
 `;
 
-export const UserName = styled.Text`
+export const UserName = styled.TouchableOpacity``;
+
+export const UserNameText = styled.Text`
   color: #ff9000;
   font-family: 'RobotoSlab-Medium';
 `;
+
 export const ProfileButton = styled.TouchableOpacity``;
 
 export const UserAvatar = styled.Image`
   width: 56px;
   height: 56px;
   border-radius: 28px;
-`;
-
-export const UserAvatarText = styled.Text`
-  color: #ff9000;
-  font-family: 'RobotoSlab-Medium';
 `;
 
 export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`
@@ -70,7 +68,7 @@ export const ProviderAvatar = styled.Image`
 
 export const ProviderInfo = styled.View`
   flex: 1;
-  margin-left: 20px;
+  margin-left: 24px;
 `;
 
 export const ProviderName = styled.Text`
@@ -82,7 +80,7 @@ export const ProviderName = styled.Text`
 export const ProviderMeta = styled.View`
   flex-direction: row;
   align-items: center;
-  margin-top: 8px;
+  margin-top: 6px;
 `;
 export const ProviderMetaText = styled.Text`
   margin-left: 8px;
