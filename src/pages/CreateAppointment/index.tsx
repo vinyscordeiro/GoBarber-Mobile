@@ -113,6 +113,7 @@ const CreateAppointment: React.FC = () => {
     api.get('providers').then(response => {
       setProviders(response.data);
     });
+
   }, []);
 
   useEffect(() => {
@@ -137,6 +138,8 @@ const CreateAppointment: React.FC = () => {
           hourFormatted: format(new Date().setHours(hour), 'HH:00'),
           available,
       }));
+
+      console.log()
   }, [availability]);
 
   const afternoonAvailability = useMemo(() => {
