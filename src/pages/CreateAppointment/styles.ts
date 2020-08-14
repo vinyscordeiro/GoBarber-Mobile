@@ -102,7 +102,7 @@ export const OpenDayPickerButton = styled(RectButton)`
 `;
 
 export const OpenDayPickerButtonText = styled.Text`
-  font-family: 'RobotSlab-Medium';
+  font-family: 'RobotoSlab-Medium';
   font-size: 16px;
   color: #232129;
 `;

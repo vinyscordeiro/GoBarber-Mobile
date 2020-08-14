@@ -77,9 +77,10 @@ const CreateAppointment: React.FC = () => {
     setShowDatePicker(state => !state);
   }, []);
 
-  const handleDateChange = useCallback((event: any, date: Date | undefined) => {
+  const handleDateChange = useCallback((_, date: Date | undefined) => {
     if (Platform.OS === 'android') {
       setShowDatePicker(false);
+      setselectedHour(0);
     }
 
     if (date) {
@@ -122,11 +123,13 @@ const CreateAppointment: React.FC = () => {
         params: {
           year: selectedDate.getFullYear(),
           month: selectedDate.getMonth() + 1,
-          day: selectedDate.getDay(),
+          day: selectedDate.getDate(),
         },
       })
       .then(response => {
+        console.log(selectedDate);
         setAvailability(response.data);
+        console.log(response.data);
       });
   }, [selectedDate, selectedProvider]);
 
@@ -203,7 +206,7 @@ const CreateAppointment: React.FC = () => {
           <Title>Escolha a data</Title>
           <OpenDayPickerButton onPress={handleToogleDatePicker}>
             <OpenDayPickerButtonText>
-              Selecionar outra Data
+              Selecionar outra data
             </OpenDayPickerButtonText>
           </OpenDayPickerButton>
           {showDatePicker && (

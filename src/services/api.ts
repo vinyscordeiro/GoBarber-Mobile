@@ -5,7 +5,7 @@ http://10.0.2.2:3333 Emulador Android
 */
 
 const api = axios.create({
-  baseURL: 'https://gobarberapi.develitt.com',
+  baseURL: 'http://10.0.2.2:3333',
 });
 
 export default api;
