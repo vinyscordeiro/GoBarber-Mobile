@@ -127,9 +127,7 @@ const CreateAppointment: React.FC = () => {
         },
       })
       .then(response => {
-        console.log(selectedDate);
         setAvailability(response.data);
-        console.log(response.data);
       });
   }, [selectedDate, selectedProvider]);
 
@@ -142,7 +140,6 @@ const CreateAppointment: React.FC = () => {
           available,
       }));
 
-      console.log()
   }, [availability]);
 
   const afternoonAvailability = useMemo(() => {
