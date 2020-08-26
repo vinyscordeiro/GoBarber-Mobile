@@ -1,10 +1,7 @@
 <h1> About the project </h1>
 
 Made by Vinicius Cordeiro on the GoStack Rocketseat bootcamp , this page is responsable for users scheduling their appointments with the Barbers available. For more information and the code of the API <a href="https://github.com/vinyscordeiro/GoBarber-Backend">(Click here)</a> or the frontend <a href="https://github.com/vinyscordeiro/GoBarberFrontend">(Click here)</a>.
-
-<img src="https://arquivos-gobarber.s3.eu-west-2.amazonaws.com/Login.png" alt="" width="200px" height="450px"/>
-<img src="https://arquivos-gobarber.s3.eu-west-2.amazonaws.com/Lista.png" alt="" width="200px" height="550px/>
-
+  <img src="https://arquivos-gobarber.s3.eu-west-2.amazonaws.com/Login.png" alt="" width="250px" height="450px"/>
 <h2> Technologies used </h2>
 
 <ul>
